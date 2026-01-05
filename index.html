@@ -1,42 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Annie's Digital Garden</title>
     <style>
-        body { font-family: monospace; max-width: 800px; margin: 40px auto; padding: 0 20px; background-color: #f4f4f4; }
-        h1 { color: #333; }
-        .project { background: white; padding: 20px; border-radius: 8px; border: 1px solid #ddd; margin-bottom: 20px; }
+        /* --- BASIC STYLE --- */
+        body { 
+            font-family: 'Courier New', monospace;
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 0 20px; 
+            background-color: #f9f9f9; 
+            color: #333;
+        }
+
+        /* --- NAVBAR --- */
+        header {
+            display: flex;             
+            justify-content: space-between; 
+            align-items: center;       
+            padding: 30px 0;           
+            margin-bottom: 40px;       
+            border-bottom: 2px solid #333; 
+        }
+
+        .logo {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #222;
+            text-decoration: none;
+        }
+
+        nav a {
+            margin-left: 20px;         
+            text-decoration: none;
+            color: #666;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0066cc;            
+            text-decoration: underline;
+        }
+
+        /* --- PROJECTS AND CONTENT --- */
+        h1 { color: #222; }
+        
+        .project { 
+            background: white; 
+            padding: 25px; 
+            border-radius: 8px; 
+            border: 1px solid #ddd; 
+            margin-bottom: 30px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+        }
+        
         a { color: #0066cc; text-decoration: none; }
         a:hover { text-decoration: underline; }
+
+        /* --- LINKS --- */
+        .footer-links {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px dashed #ccc;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+        
+        .footer-links a {
+            margin: 0 15px;
+            font-size: 1.2em;
+            color: #444;
+        }
+        
+        .footer-links a:hover { color: #0066cc; }
+
+        .archive-note {
+            font-size: small; 
+            color: #aaa; 
+            text-align: center; 
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
 
-    <h1>🌿 Annie's Digital Garden</h1>
-    <p>Hi! I'm Annie. I am a tech witch living by the ocean, and I am teaching my computer to do what I want.</p>
-    <p>This is my archive of experiments, notes, and victories over the machine.</p>
+    <header>
+        <a href="index.html" class="logo">Any Stone 🧙‍♀️</a>
 
-    <hr>
+        <nav>
+            <a href="index.html">About Me</a>
+            <a href="log.html">Dev Log</a>
+            <a href="#links">Links</a> </nav>
+    </header>
+
+    <section>
+        <h1>🌿 Annie's Digital Garden</h1>
+        <p>Hi! I'm Annie. I am a tech witch living by the ocean 🌊, and I am teaching my computer to do what I want.</p>
+        <p>This is my archive of experiments, notes, and victories over the machine.</p>
+    </section>
+
+    <br>
 
     <h2>🚀 My Projects</h2>
 
     <div class="project">
-        <h3>🐞 The Ugly Bug (C++)</h3>
+        <h3>🐞 The Witch Bug (C++)</h3>
         <p>My first victory over C++ graphics on Apple Silicon. 
-           I defeated the static noise, tamed the Makefiles, and forced the SSDL library to behave.
-        Sounds fancy for the modest result you gonna witness.</p>
-        <p>
-            👉 <a href="https://github.com/any-stone/witch-bug">View code on GitHub</a>
+           I defeated the static noise, tamed the Makefiles, and forced the SSDL library to behave.</p>
+        <p>Instead of fixing the graphics glitches, I turned them into a <strong>Wireframe Aesthetic</strong> feature.</p>
+        <p style="margin-top: 15px;">
+            👉 <a href="https://github.com/any-stone/witch-bug" target="_blank">View code on GitHub</a>
         </p>
     </div>
     
-    <p><a href="log.html">👉 Read my Dev Log</a></p>
+    <p>👀 Curious about the process? <a href="log.html"><strong>Read my Dev Log</strong></a></p>
     
-    <hr>
-    <p style="font-size: small; color: #888;">
-        Archive 2022: <br>
-        <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" width="50" />
-    </p>
+    <div id="links" class="footer-links">
+        <h3>Connect with me:</h3>
+        <a href="https://github.com/any-stone" target="_blank">🐙 GitHub</a>
+        <a href="https://www.linkedin.com/in/annkuksa/" target="_blank">💼 LinkedIn</a>
+        <a href="mailto:annie.gaspereau@gmail.com">📧 Email</a>
+        
+        <div class="archive-note">
+            <br>
+            Archive 2022:<br>
+            <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" width="40" style="opacity: 0.7;" />
+        </div>
+    </div>
 
 </body>
 </html>
