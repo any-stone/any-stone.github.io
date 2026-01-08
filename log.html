@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Annie's Dev Log</title>
     <style>
-        body { font-family: monospace; max-width: 800px; margin: 40px auto; padding: 0 20px; background: #f4f4f4; color: #333; }
-        h1 { color: #d63384; } /* color Magenta */
+        /* Обновил шрифт, чтобы совпадал с главной страницей */
+        body { 
+            font-family: 'Courier New', monospace; 
+            max-width: 800px; 
+            margin: 40px auto; 
+            padding: 0 20px; 
+            background: #f4f4f4; 
+            color: #333; 
+        }
+        h1 { color: #d63384; } /* color Magenta - оставляем, это стиль "Code Witch"! */
         .entry { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #ddd; }
         .date { font-weight: bold; color: #666; margin-bottom: 5px; }
         a { color: #d63384; text-decoration: none; }
@@ -20,6 +28,28 @@
 
     <h1>📓 The Code Witch Log</h1>
     <p>Daily notes on C++, failures, and victories.</p>
+
+    <div class="entry">
+        <div class="date">January 7, 2026</div>
+        <p>
+            <strong>Terminal Sorcery & The Cup.</strong>
+        </p>
+        <ul>
+            <li>
+                <strong>Level Up:</strong> Installed GitHub CLI (<code>gh</code>) via Homebrew. 
+                Fought with an <code>HTTP 401: Bad credentials</code> error and won by re-authenticating directly from the terminal.
+            </li>
+            <li>
+                <strong>Workflow Upgrade:</strong> Created the <a href="https://github.com/any-stone/ssdl-cup">ssdl-cup</a> repository 
+                completely from the command line using <code>gh repo create</code>. 
+                No browser clicks anymore. Felt like a true Tech Witch. 🧙‍♀️
+            </li>
+            <li>
+                <strong>The Code:</strong> The Cup project is now live! It demonstrates coordinate mapping 
+                and basic shape rendering in C++.
+            </li>
+        </ul>
+    </div>
 
     <div class="entry">
         <div class="date">January 5, 2026</div>
@@ -42,6 +72,7 @@
             </li>
         </ul>
     </div>
+
     <div class="entry">
         <div class="date">January 4, 2026</div>
         <p>Fixed the "Eboo" bug! I used a <code>for</code> loop to erase the forehead pixels so the hat sits properly. It felt like real engineering. Also fought with Git tokens and won.</p>
