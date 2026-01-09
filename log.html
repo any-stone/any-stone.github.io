@@ -29,6 +29,40 @@
     <p>Daily notes on C++, failures, and victories.</p>
 
     <div class="entry">
+        <div class="date">January 8, 2026</div>
+        <p>
+            <strong>The Drunk Cube & The Lie of Graph Paper.</strong>
+        </p>
+        <p>
+            Well... I always knew that computers give you exactly what you ask for, not what you <em>meant</em>. BUT. Today it literally gave me a new perspective.
+        </p>
+        <ul>
+            <li>
+                <strong>The Task was:</strong> Draw a simple 3D wireframe cube. 
+                I sketched it on my iPad first, counted the grid cells, and transferred the coordinates to C++ perfectly.
+            </li>
+            <li>
+                <strong>The Glitch:</strong> The code worked, but the cube looked "drunk" and distorted. The top face was huge and steep. 
+                I couldn't understand why - the numbers were identical to my drawing!
+            </li>
+            <li>
+                <strong>The Epiphany:</strong> Turns out, when we draw by hand, our brain "autocorrects" bad perspective. 
+                I drew a depth of "2 cells up, 1 cell right" (~63° angle), which looks fine on paper because lines have thickness and imperfection.
+            </li>
+            <li>
+                <strong>The Fix:</strong> On a pixel-perfect screen, that steep angle breaks the illusion. 
+                We had to switch to the <strong>"45-Degree Rule"</strong> - which I didn't knew existed - moving X and Y by equal amounts. 
+            </li>
+        </ul>
+        <p>
+            <em>Lesson:</em> To make things look "real" on the screen, you have to code them "flatter" than you draw them.
+            <br><br>
+            I also learned that this is the core principle of <strong>Isometric Graphics</strong> in classic games (like <em>Fallout</em> or <em>Diablo</em>). 
+            They use a locked angle (often a 2:1 pixel ratio) to trick the brain into seeing 3D depth on a 2D screen. I essentially stumbled upon the same mechanic by accident!
+        </p>
+    </div>
+
+    <div class="entry">
         <div class="date">January 7, 2026</div>
         <p>
             <strong>Terminal Sorcery & The Cup.</strong>
